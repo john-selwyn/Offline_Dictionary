@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Terms Dictionary</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <button id="themeToggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <div class="container">
+      <div class="glass-morphism">
+        <h1>ICT <span class="highlight">Dictionary</span></h1>
+        <div class="search-container">
+          <div class="input-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search tech terms..."
+            />
+          </div>
+          <button onclick="searchWord()" class="search-button">
+            Search
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div id="result" class="result"></div>
+        <div class="popular-terms">
+          <h3>Popular Terms</h3>
+          <div class="tags">
+            <span onclick="quickSearch('algorithm')">algorithm</span>
+            <span onclick="quickSearch('cloud')">cloud</span>
+            <span onclick="quickSearch('database')">database</span>
+            <span onclick="quickSearch('html')">html</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
